@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\MakeTree]
+@="Make Tree"
+"Icon"="shell32.dll,36"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\MakeTree\command]
+@="cmd.exe /c \"\"D:\\General\\04-DocumentRoot\\0-document_root\\0037-WINDOWS-Tools\\make-tree.cmd\" \"%V\\tree.txt\"\""
