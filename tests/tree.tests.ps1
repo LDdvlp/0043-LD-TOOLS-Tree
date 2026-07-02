@@ -54,3 +54,59 @@ else {
 
     Write-Host "[FAIL] Level 2"
 }
+
+# ------------------------------------------
+# Test 4
+# ------------------------------------------
+
+$result = Get-TreeNode "+-- README.md"
+
+if ($result.Name -eq "README.md" -and -not $result.IsDirectory) {
+    Write-Host "[ OK ] File"
+}
+else {
+    Write-Host "[FAIL] File"
+}
+
+# ------------------------------------------
+# Test 5
+# ------------------------------------------
+
+$result = Get-TreeNode "+-- src/"
+
+if ($result.Name -eq "src/" -and $result.IsDirectory) {
+    Write-Host "[ OK ] Directory"
+}
+else {
+    Write-Host "[FAIL] Directory"
+}
+
+# ------------------------------------------
+# Test 6
+# ------------------------------------------
+
+$result = Get-TreeNode "README.md"
+
+if ($null -eq $result) {
+    Write-Host "[ OK ] Invalid node"
+}
+else {
+    Write-Host "[FAIL] Invalid node"
+}
+
+# ------------------------------------------
+# Test 7
+# ------------------------------------------
+
+$result = Get-TreeEntry "|   +-- src/"
+
+if (
+    $result.Level -eq 1 -and
+    $result.Name -eq "src/" -and
+    $result.IsDirectory
+) {
+    Write-Host "[ OK ] Tree Entry"
+}
+else {
+    Write-Host "[FAIL] Tree Entry"
+}

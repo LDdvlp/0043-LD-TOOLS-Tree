@@ -9,5 +9,6 @@ and this project adheres to Semantic Versioning.
 
 ### Added
 
-- Extracted `Get-TreeLevel()` into the new Tree core.
-- Added the first automated unit tests.
+- Extracted `Get-TreeNode()` into the new Tree core.
+- Added `Get-TreeEntry()` as the first parsing pipeline component.
+- Extended automated unit tests.
