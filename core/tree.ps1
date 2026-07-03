@@ -86,3 +86,49 @@ function New-TreeItem {
 
     return $fullPath
 }
+function Get-TreeEntries {
+
+    param(
+        [string[]]$Lines
+    )
+
+    $entries = @()
+
+    foreach ($line in $Lines) {
+
+        $entry = Get-TreeEntry $line
+
+        if ($null -ne $entry) {
+            $entries += $entry
+        }
+    }
+
+    return $entries
+}
+function Invoke-TreeCreation {
+
+    param(
+        [string[]]$Lines,
+        [string]$OutputPath
+    )
+
+    $entries = Get-TreeEntries $Lines
+
+    $stack = @()
+    $stack += $OutputPath
+
+    foreach ($entry in $entries) {
+
+        while ($stack.Count -gt ($entry.Level + 1)) {
+            $stack = $stack[0..($stack.Count - 2)]
+        }
+
+        $parent = $stack[-1]
+
+        $created = New-TreeItem $parent $entry
+
+        if ($entry.IsDirectory) {
+            $stack += $created
+        }
+    }
+}

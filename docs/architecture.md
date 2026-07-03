@@ -35,3 +35,20 @@ Rules:
 - Name never contains format-specific markers.
 - Level represents the hierarchy depth.
 - IsDirectory defines the filesystem type.
+
+## Engine Pipeline
+
+```text
+Input
+  |
+  v
+Parsing Engine
+  |
+  v
+TreeEntry[]
+  |
+  v
+Filesystem Engine
+  |
+  v
+Filesystem

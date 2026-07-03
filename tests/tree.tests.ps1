@@ -167,6 +167,49 @@ Assert-TreeTest "Create file" (
     Test-Path $result
 )
 
+Write-TestSection "Regression"
+
+# ------------------------------------------
+# Test 10
+# ------------------------------------------
+
+$fixture = Join-Path $PSScriptRoot "fixtures/legacy-tree.txt"
+
+$lines = Get-Content $fixture
+
+$result = Get-TreeEntries $lines
+
+Assert-TreeTest "Legacy parsing" (
+    $result.Count -eq 4 -and
+
+    $result[0].Name -eq "src" -and
+    $result[0].Level -eq 0 -and
+    $result[0].IsDirectory -and
+
+    $result[1].Name -eq "app.ps1" -and
+    $result[1].Level -eq 1 -and
+    -not $result[1].IsDirectory
+)
+
+# ------------------------------------------
+# Test 11
+# ------------------------------------------
+
+$output = Join-Path $env:TEMP "TreeRegression"
+
+Remove-Item $output -Recurse -Force -ErrorAction SilentlyContinue
+
+New-Item -ItemType Directory -Path $output | Out-Null
+
+Invoke-TreeCreation $lines $output
+
+Assert-TreeTest "Legacy filesystem creation" (
+    (Test-Path (Join-Path $output "src")) -and
+    (Test-Path (Join-Path $output "src/app.ps1")) -and
+    (Test-Path (Join-Path $output "docs")) -and
+    (Test-Path (Join-Path $output "docs/README.md"))
+)
+
 # ------------------------------------------
 # Summary
 # ------------------------------------------

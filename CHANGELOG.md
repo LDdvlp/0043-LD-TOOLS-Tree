@@ -16,3 +16,6 @@ and this project adheres to Semantic Versioning.
 - Added filesystem creation through New-TreeItem().
 - Added directory and file creation tests.
 - Added LD Test Runner v0.1 with numbering, sections and summary.
+- Added legacy regression tests.
+- Added fixture-based testing.
+- Added full tree creation pipeline through Invoke-TreeCreation().
