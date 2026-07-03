@@ -12,3 +12,7 @@ and this project adheres to Semantic Versioning.
 - Extracted `Get-TreeNode()` into the new Tree core.
 - Added `Get-TreeEntry()` as the first parsing pipeline component.
 - Extended automated unit tests.
+- Added normalized TreeEntry internal data model.
+- Added filesystem creation through New-TreeItem().
+- Added directory and file creation tests.
+- Added LD Test Runner v0.1 with numbering, sections and summary.

@@ -33,9 +33,15 @@ function Get-TreeNode {
 
     $name = $Line.Substring(4).Trim()
 
+    $isDirectory = $name.EndsWith("/")
+
+    if ($isDirectory) {
+        $name = $name.TrimEnd("/")
+    }
+
     return @{
         Name        = $name
-        IsDirectory = $name.EndsWith("/")
+        IsDirectory = $isDirectory
     }
 }
 
@@ -58,4 +64,25 @@ function Get-TreeEntry {
         Name        = $node.Name
         IsDirectory = $node.IsDirectory
     }
+}
+
+function New-TreeItem {
+
+    param(
+        [string]$Parent,
+        [hashtable]$Entry
+    )
+
+    $fullPath = Join-Path $Parent $Entry.Name
+
+    if ($Entry.IsDirectory) {
+
+        New-Item -ItemType Directory -Force -Path $fullPath | Out-Null
+    }
+    else {
+
+        New-Item -ItemType File -Force -Path $fullPath | Out-Null
+    }
+
+    return $fullPath
 }

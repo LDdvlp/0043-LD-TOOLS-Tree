@@ -15,3 +15,23 @@ Future platforms:
 
 - Linux
 - macOS
+
+## Internal Data Model
+
+### TreeEntry
+
+A TreeEntry represents a normalized filesystem tree element.
+
+```text
+TreeEntry
+
+Name
+Level
+IsDirectory
+```
+
+Rules:
+
+- Name never contains format-specific markers.
+- Level represents the hierarchy depth.
+- IsDirectory defines the filesystem type.
