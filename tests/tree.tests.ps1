@@ -233,6 +233,28 @@ Assert-TreeTest "ASCII parsing" (
 )
 
 # ------------------------------------------
+# Test 13
+# ------------------------------------------
+
+$unicodeFixture = Join-Path $PSScriptRoot "fixtures/unicode-tree.txt"
+
+$unicodeLines = Get-Content $unicodeFixture
+
+$unicodeResult = Get-TreeEntries $unicodeLines
+
+Assert-TreeTest "Unicode parsing" (
+    $unicodeResult.Count -eq 4 -and
+
+    $unicodeResult[0].Name -eq "src" -and
+    $unicodeResult[0].Level -eq 0 -and
+    $unicodeResult[0].IsDirectory -and
+
+    $unicodeResult[1].Name -eq "app.ps1" -and
+    $unicodeResult[1].Level -eq 1 -and
+    -not $unicodeResult[1].IsDirectory
+)
+
+# ------------------------------------------
 # Summary
 # ------------------------------------------
 

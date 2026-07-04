@@ -33,3 +33,13 @@ LD Test Runner
 Add legacy regression tests
 
 La V2 sait refaire la V1.
+
+## Phase 5 — Extension
+
+Add ASCII tree format support  
+Add Unicode tree format support
+
+Naissance :
+Multi-format Parser
+
+Le moteur accepte plusieurs formats sans modification du Filesystem Engine.

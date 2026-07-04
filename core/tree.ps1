@@ -7,22 +7,25 @@ function Get-TreeLevel {
     $level = 0
 
     while (
+        $Line.StartsWith("│   ") -or
         $Line.StartsWith("|    ") -or
         $Line.StartsWith("     ") -or
         $Line.StartsWith("|   ") -or
         $Line.StartsWith("    ")
     ) {
-    
+
         if (
             $Line.StartsWith("|    ") -or
             $Line.StartsWith("     ")
         ) {
+
             $Line = $Line.Substring(5)
         }
         else {
+
             $Line = $Line.Substring(4)
         }
-    
+
         $level++
     }
 
@@ -43,6 +46,13 @@ function Get-TreeNode {
         $name = $Line.Substring(5).Trim()
     }
     elseif ($Line.StartsWith("+-- ")) {
+
+        $name = $Line.Substring(4).Trim()
+    }
+    elseif (
+        $Line.StartsWith("├── ") -or
+        $Line.StartsWith("└── ")
+    ) {
 
         $name = $Line.Substring(4).Trim()
     }

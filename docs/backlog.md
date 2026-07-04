@@ -7,4 +7,4 @@
 | TREE-003 | ✅ Done | Extract New-TreeItem() |
 | TREE-004 | ✅ Done | Regression tests |
 | TREE-005 | ✅ Done | Support ASCII (+---) |
-| TREE-006 | 🚧 In Progress | Support Unicode (├──) |
+| TREE-006 | ✅ Done | Support Unicode (├──) |
