@@ -22,4 +22,5 @@ and this project adheres to Semantic Versioning.
 - Added ASCII tree format parsing support.
 - Added ASCII regression fixture.
 - Improved LD Test Runner summary with colors.
-
+- Added Unicode tree format parsing support.
+- Added Unicode regression fixture.
