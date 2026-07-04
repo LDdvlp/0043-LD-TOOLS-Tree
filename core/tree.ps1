@@ -7,12 +7,23 @@ function Get-TreeLevel {
     $level = 0
 
     while (
+        $Line.StartsWith("|    ") -or
+        $Line.StartsWith("     ") -or
         $Line.StartsWith("|   ") -or
         $Line.StartsWith("    ")
     ) {
-
+    
+        if (
+            $Line.StartsWith("|    ") -or
+            $Line.StartsWith("     ")
+        ) {
+            $Line = $Line.Substring(5)
+        }
+        else {
+            $Line = $Line.Substring(4)
+        }
+    
         $level++
-        $Line = $Line.Substring(4)
     }
 
     return @{
@@ -27,11 +38,18 @@ function Get-TreeNode {
         [string]$Line
     )
 
-    if (-not $Line.StartsWith("+-- ")) {
+    if ($Line.StartsWith("+--- ")) {
+
+        $name = $Line.Substring(5).Trim()
+    }
+    elseif ($Line.StartsWith("+-- ")) {
+
+        $name = $Line.Substring(4).Trim()
+    }
+    else {
+
         return $null
     }
-
-    $name = $Line.Substring(4).Trim()
 
     $isDirectory = $name.EndsWith("/")
 

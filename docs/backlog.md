@@ -6,5 +6,5 @@
 | TREE-002 | ✅ Done | Extract Get-TreeNode() and Get-TreeEntry() |
 | TREE-003 | ✅ Done | Extract New-TreeItem() |
 | TREE-004 | ✅ Done | Regression tests |
-| TREE-005 | 🚧 In Progress | Support ASCII (+---) |
-| TREE-006 | ⏳ Planned | Support Unicode (├──) |
+| TREE-005 | ✅ Done | Support ASCII (+---) |
+| TREE-006 | 🚧 In Progress | Support Unicode (├──) |

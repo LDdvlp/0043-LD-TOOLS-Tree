@@ -211,6 +211,28 @@ Assert-TreeTest "Legacy filesystem creation" (
 )
 
 # ------------------------------------------
+# Test 12
+# ------------------------------------------
+
+$asciiFixture = Join-Path $PSScriptRoot "fixtures/ascii-tree.txt"
+
+$asciiLines = Get-Content $asciiFixture
+
+$asciiResult = Get-TreeEntries $asciiLines
+
+Assert-TreeTest "ASCII parsing" (
+    $asciiResult.Count -eq 4 -and
+
+    $asciiResult[0].Name -eq "src" -and
+    $asciiResult[0].Level -eq 0 -and
+    $asciiResult[0].IsDirectory -and
+
+    $asciiResult[1].Name -eq "app.ps1" -and
+    $asciiResult[1].Level -eq 1 -and
+    -not $asciiResult[1].IsDirectory
+)
+
+# ------------------------------------------
 # Summary
 # ------------------------------------------
 
@@ -220,9 +242,11 @@ Write-Host "Summary"
 Write-Host "====================================="
 Write-Host ""
 
-Write-Host "Tests : $script:TestNumber"
-Write-Host "Passed: $script:Passed"
-Write-Host "Failed: $script:Failed"
+Write-Host "Tests : $($script:TestNumber)" -ForegroundColor Blue
+
+Write-Host "Passed: $($script:Passed)" -ForegroundColor Green
+
+Write-Host "Failed: $($script:Failed)" -ForegroundColor Red
 
 Write-Host ""
 Write-Host "====================================="

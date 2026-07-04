@@ -19,3 +19,7 @@ and this project adheres to Semantic Versioning.
 - Added legacy regression tests.
 - Added fixture-based testing.
 - Added full tree creation pipeline through Invoke-TreeCreation().
+- Added ASCII tree format parsing support.
+- Added ASCII regression fixture.
+- Improved LD Test Runner summary with colors.
+
