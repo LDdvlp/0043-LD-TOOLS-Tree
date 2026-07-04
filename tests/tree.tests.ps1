@@ -255,6 +255,28 @@ Assert-TreeTest "Unicode parsing" (
 )
 
 # ------------------------------------------
+# Test 14
+# ------------------------------------------
+
+$emptyFixture = Join-Path $PSScriptRoot "fixtures/empty-lines-tree.txt"
+
+$emptyLines = Get-Content $emptyFixture
+
+$emptyResult = Get-TreeEntries $emptyLines
+
+Assert-TreeTest "Ignore empty lines" (
+    $emptyResult.Count -eq 4 -and
+
+    $emptyResult[0].Name -eq "src" -and
+    $emptyResult[0].Level -eq 0 -and
+    $emptyResult[0].IsDirectory -and
+
+    $emptyResult[1].Name -eq "app.ps1" -and
+    $emptyResult[1].Level -eq 1 -and
+    -not $emptyResult[1].IsDirectory
+)
+
+# ------------------------------------------
 # Summary
 # ------------------------------------------
 

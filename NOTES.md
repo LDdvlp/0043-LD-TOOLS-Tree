@@ -43,3 +43,9 @@ Naissance :
 Multi-format Parser
 
 Le moteur accepte plusieurs formats sans modification du Filesystem Engine.
+
+## Testing philosophy
+
+A test can validate an existing behavior without changing production code.
+
+Regression tests transform assumptions into contracts.

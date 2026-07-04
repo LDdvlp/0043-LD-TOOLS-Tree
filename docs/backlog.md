@@ -8,5 +8,5 @@
 | TREE-004 | ✅ Done | Regression tests |
 | TREE-005 | ✅ Done | Support ASCII (+---) |
 | TREE-006 | ✅ Done | Support Unicode (├──) |
-| TREE-007 | 🚧 In Progress | Ignore empty lines |
-| TREE-008 | ⏳ Planned | Ignore comments |
+| TREE-007 | ✅ Done | Ignore empty lines |
+| TREE-008 | 🚧 In Progress | Ignore comments |
