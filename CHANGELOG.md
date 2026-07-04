@@ -7,6 +7,8 @@ and this project adheres to Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.2.0-alpha.1] - 2026-07-04
+
 ### Added
 
 - Extracted `Get-TreeNode()` into the new Tree core.
