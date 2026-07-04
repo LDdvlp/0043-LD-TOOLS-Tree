@@ -9,4 +9,4 @@
 | TREE-005 | ✅ Done | Support ASCII (+---) |
 | TREE-006 | ✅ Done | Support Unicode (├──) |
 | TREE-007 | ✅ Done | Ignore empty lines |
-| TREE-008 | 🚧 In Progress | Ignore comments |
+| TREE-008 | ✅ Done | Ignore comments |

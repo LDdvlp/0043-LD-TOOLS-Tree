@@ -277,6 +277,28 @@ Assert-TreeTest "Ignore empty lines" (
 )
 
 # ------------------------------------------
+# Test 15
+# ------------------------------------------
+
+$commentsFixture = Join-Path $PSScriptRoot "fixtures/comments-tree.txt"
+
+$commentsLines = Get-Content $commentsFixture
+
+$commentsResult = Get-TreeEntries $commentsLines
+
+Assert-TreeTest "Ignore comments" (
+    $commentsResult.Count -eq 4 -and
+
+    $commentsResult[0].Name -eq "src" -and
+    $commentsResult[0].Level -eq 0 -and
+    $commentsResult[0].IsDirectory -and
+
+    $commentsResult[1].Name -eq "app.ps1" -and
+    $commentsResult[1].Level -eq 1 -and
+    -not $commentsResult[1].IsDirectory
+)
+
+# ------------------------------------------
 # Summary
 # ------------------------------------------
 

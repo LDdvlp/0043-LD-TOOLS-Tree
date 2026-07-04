@@ -49,3 +49,7 @@ Le moteur accepte plusieurs formats sans modification du Filesystem Engine.
 A test can validate an existing behavior without changing production code.
 
 Regression tests transform assumptions into contracts.
+
+Test-only commits are valid when they document and protect existing behavior.
+
+Not every improvement requires production code changes.

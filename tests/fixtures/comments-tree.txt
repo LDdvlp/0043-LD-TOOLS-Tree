@@ -1,0 +1,7 @@
+# Source folder
++-- src/
+|   +-- app.ps1
+
+# Documentation folder
++-- docs/
+|   +-- README.md

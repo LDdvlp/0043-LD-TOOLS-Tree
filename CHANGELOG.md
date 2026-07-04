@@ -26,3 +26,5 @@ and this project adheres to Semantic Versioning.
 - Added Unicode regression fixture.
 - Added empty lines regression test.
 - Added empty lines fixture.
+- Added comments regression test.
+- Added comments fixture.
