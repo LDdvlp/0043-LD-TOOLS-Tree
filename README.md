@@ -11,3 +11,13 @@ Tree provides a collection of tools to create, export, validate, compare and tra
 ## Status
 
 🚧 In development.
+
+## Continuous Integration
+
+Run local CI:
+
+```powershell
+pwsh ci.ps1
+```
+
+The same CI script is executed by GitHub Actions.

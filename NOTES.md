@@ -53,3 +53,11 @@ Regression tests transform assumptions into contracts.
 Test-only commits are valid when they document and protect existing behavior.
 
 Not every improvement requires production code changes.
+
+
+## CI philosophy
+
+CI logic belongs to the repository.
+
+GitHub Actions should execute the project CI script,
+not duplicate the validation logic.

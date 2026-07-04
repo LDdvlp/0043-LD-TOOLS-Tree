@@ -30,3 +30,5 @@ and this project adheres to Semantic Versioning.
 - Added empty lines fixture.
 - Added comments regression test.
 - Added comments fixture.
+- Added GitHub Actions continuous integration.
+- Added local CI script.
