@@ -44,4 +44,4 @@
 - [x] PowerShell Core compatibility
 - [x] Encoding / line endings
 - [x] Linux runner
-- [ ] macOS runner
+- [x] macOS runner
