@@ -18,7 +18,7 @@
 | TREE-010 | ✅ Done | Add Continuous Integration |
 | TREE-011 | ✅ Done | Prepare v0.2.0-alpha.2 release |
 | **V0.3 - Cross-platform** |||
-| TREE-012 | 🚧 In progress | Audit cross-platform compatibility |
+| TREE-012 | ✅ Done | Audit cross-platform compatibility |
 | TREE-013 | ⏳ Todo | Normalize path handling |
 | TREE-014 | ⏳ Todo | Add Linux compatibility tests |
 | TREE-015 | ⏳ Todo | Add macOS compatibility tests |
