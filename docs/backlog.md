@@ -40,7 +40,7 @@
 ### Technical audit
 
 - [x] Path separators
-- [ ] Hardcoded paths
+- [x] Hardcoded paths
 - [ ] PowerShell Core compatibility
 - [ ] Encoding / line endings
 - [ ] Linux runner
