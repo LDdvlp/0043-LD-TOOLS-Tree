@@ -61,3 +61,10 @@ CI logic belongs to the repository.
 
 GitHub Actions should execute the project CI script,
 not duplicate the validation logic.
+
+## LD Git Standard
+
+- Conventional Commits
+- SemVer
+- Annotated tags
+- GitHub releases
