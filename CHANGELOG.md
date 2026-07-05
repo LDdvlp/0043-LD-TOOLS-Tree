@@ -7,6 +7,22 @@ and this project adheres to Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.2.0-alpha.2]
+
+### Added
+
+- Added continuous integration workflow.
+- Added local CI entry point with ci.ps1.
+
+### Changed
+
+- GitHub Actions now delegates validation to local CI script.
+
+### Notes
+
+- Local CI remains the single source of truth.
+- No parser or filesystem behavior changes.
+
 ## [0.2.0-alpha.1] - 2026-07-04
 
 ### Added
