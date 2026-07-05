@@ -43,5 +43,5 @@
 - [x] Hardcoded paths
 - [x] PowerShell Core compatibility
 - [x] Encoding / line endings
-- [ ] Linux runner
+- [x] Linux runner
 - [ ] macOS runner
