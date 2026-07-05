@@ -1,5 +1,13 @@
 # Tree
 
+![CI](https://github.com/LDdvlp/0043-LD-TOOLS-Tree/actions/workflows/ci.yml/badge.svg)
+
+![Version](https://img.shields.io/badge/version-0.2.0--alpha.2-blue)
+
+![PowerShell](https://img.shields.io/badge/PowerShell-7+-blue)
+
+![Status](https://img.shields.io/badge/status-alpha-orange)
+
 **LD Tree**
 
 A cross-platform toolkit for manipulating filesystem trees.
