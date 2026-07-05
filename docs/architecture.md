@@ -52,3 +52,26 @@ Filesystem Engine
   |
   v
 Filesystem
+```
+
+## Platform compatibility
+
+Core architecture:
+
+```text
+Parser Engine
+      |
+      v
+TreeEntry[]
+      |
+      v
+Filesystem Engine
+```
+The core engine must remain platform independent.
+
+Legacy integrations:
+
+| Component | Platform |
+|---|---|
+| *.cmd | Windows only |
+| *.reg | Windows only |

@@ -1,6 +1,7 @@
 # Tree Specification
 
-Version: 0.1.0 (Draft)
+Specification status: Draft
+Project version: 0.2.0-alpha.2
 
 ## Goal
 

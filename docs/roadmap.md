@@ -19,11 +19,22 @@
 
 ---
 
-## Version 0.3 - Cross-platform
+## v0.3 - Cross-platform
 
-- Windows integration
-- Linux integration
-- macOS integration
+Goal:
+
+Run LD-TOOLS-Tree on:
+
+- Windows
+- Linux
+- macOS
+
+Tasks:
+
+- Audit platform dependencies
+- Normalize paths
+- Validate filesystem behavior
+- Add CI OS matrix
 
 ---
 
