@@ -39,7 +39,7 @@
 
 ### Technical audit
 
-- [ ] Path separators
+- [x] Path separators
 - [ ] Hardcoded paths
 - [ ] PowerShell Core compatibility
 - [ ] Encoding / line endings
