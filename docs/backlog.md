@@ -42,6 +42,6 @@
 - [x] Path separators
 - [x] Hardcoded paths
 - [x] PowerShell Core compatibility
-- [ ] Encoding / line endings
+- [x] Encoding / line endings
 - [ ] Linux runner
 - [ ] macOS runner
