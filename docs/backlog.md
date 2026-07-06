@@ -22,7 +22,7 @@
 | TREE-013 | ✅ Done | Normalize path handling |
 | TREE-014 | ✅ Done | Add Linux compatibility tests |
 | TREE-015 | ✅ Done | Add macOS compatibility tests |
-| TREE-016 | ⏳ Todo | Add GitHub Actions OS matrix |
+| TREE-016 | ✅ Done | Add GitHub Actions OS matrix |
 
 ---
 
