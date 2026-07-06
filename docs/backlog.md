@@ -76,3 +76,20 @@
 - [x] GitHub Actions ubuntu-latest
 - [x] PowerShell Core runner
 - [x] Existing 15 tests executed
+
+---
+
+## TREE-015 — Add macOS compatibility tests
+
+### Audit
+
+- [x] No Linux-only dependencies
+- [x] No hardcoded Unix paths
+- [x] No filename case conflicts
+- [x] Portable temporary paths
+- [x] PowerShell Core compatible commands
+
+### Validation
+
+- [x] Existing test suite compatible with macOS runner
+- [x] Cross-platform path handling validated
