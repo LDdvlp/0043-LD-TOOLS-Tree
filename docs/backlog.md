@@ -45,3 +45,18 @@
 - [x] Encoding / line endings
 - [x] Linux runner
 - [x] macOS runner
+
+---
+
+## TREE-013 — Normalize path handling
+
+### Audit
+
+- [x] Temporary paths
+- [x] Dot sourcing
+- [x] Nested paths
+
+### Validation
+
+- [x] CI before refactor
+- [x] CI after refactor

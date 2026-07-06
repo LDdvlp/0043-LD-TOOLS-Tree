@@ -39,7 +39,7 @@ function Write-TestSection {
     Write-Host "-------------------------------------"
 }
 
-. "$PSScriptRoot/../core/tree.ps1"
+. (Join-Path $PSScriptRoot "../core/tree.ps1")
 
 Write-Host ""
 Write-Host "====================================="
@@ -205,9 +205,9 @@ Invoke-TreeCreation $lines $output
 
 Assert-TreeTest "Legacy filesystem creation" (
     (Test-Path (Join-Path $output "src")) -and
-    (Test-Path (Join-Path $output "src/app.ps1")) -and
+    (Test-Path (Join-Path (Join-Path $output "src") "app.ps1")) -and
     (Test-Path (Join-Path $output "docs")) -and
-    (Test-Path (Join-Path $output "docs/README.md"))
+    (Test-Path (Join-Path (Join-Path $output "docs") "README.md"))
 )
 
 # ------------------------------------------
