@@ -7,6 +7,19 @@ and this project adheres to Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.3.0-alpha.1] - 2026-07-05
+
+### Added
+
+- Added cross-platform compatibility validation
+- Added Linux CI compatibility
+- Added macOS CI compatibility
+- Added GitHub Actions multi-OS matrix
+
+### Changed
+
+- Normalized path handling for PowerShell Core portability
+
 ## [0.2.0-alpha.2] - 2026-07-05
 
 ### Added

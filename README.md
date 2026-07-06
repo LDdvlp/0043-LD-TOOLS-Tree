@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/LDdvlp/0043-LD-TOOLS-Tree/actions/workflows/ci.yml/badge.svg)
 
-![Version](https://img.shields.io/badge/version-0.2.0--alpha.2-blue)
+![Version](https://img.shields.io/badge/version-0.3.0--alpha.1-blue)
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-7+-blue)
 
