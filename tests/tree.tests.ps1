@@ -135,7 +135,7 @@ Write-TestSection "Filesystem"
 # Test 8
 # ------------------------------------------
 
-$temp = Join-Path $env:TEMP "TreeTests"
+$temp = Join-Path ([System.IO.Path]::GetTempPath()) "TreeTests"
 
 Remove-Item $temp -Recurse -Force -ErrorAction SilentlyContinue
 
@@ -195,7 +195,7 @@ Assert-TreeTest "Legacy parsing" (
 # Test 11
 # ------------------------------------------
 
-$output = Join-Path $env:TEMP "TreeRegression"
+$output = Join-Path ([System.IO.Path]::GetTempPath()) "TreeRegression"
 
 Remove-Item $output -Recurse -Force -ErrorAction SilentlyContinue
 
