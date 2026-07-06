@@ -93,3 +93,21 @@
 
 - [x] Existing test suite compatible with macOS runner
 - [x] Cross-platform path handling validated
+
+---
+
+## TREE-016 — Add GitHub Actions OS matrix
+
+### Implementation
+
+- [x] Added GitHub Actions matrix strategy
+- [x] Added ubuntu-latest runner
+- [x] Added windows-latest runner
+- [x] Added macos-latest runner
+
+### Validation
+
+- [x] Linux CI passed
+- [x] Windows CI passed
+- [x] macOS CI passed
+- [x] Full matrix successful
