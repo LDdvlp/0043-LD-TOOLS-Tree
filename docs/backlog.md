@@ -60,3 +60,19 @@
 
 - [x] CI before refactor
 - [x] CI after refactor
+
+---
+
+## TREE-014 — Add Linux compatibility tests
+
+### Audit
+
+- [x] No Windows-only assumptions
+- [x] No Windows-only PowerShell usage
+- [x] Existing test suite compatible with Linux runner
+
+### Validation
+
+- [x] GitHub Actions ubuntu-latest
+- [x] PowerShell Core runner
+- [x] Existing 15 tests executed
