@@ -25,6 +25,8 @@
 | TREE-016 | ✅ Done | Add GitHub Actions OS matrix |
 | **V0.4 - Restore user workflow** |||
 | TREE-017 | ✅ Done | Add command line interface |
+| TREE-018 | ⏳ Todo | Restore Make Tree workflow |
+
 
 ---
 
@@ -133,3 +135,22 @@ Restore user access to LD-TOOLS-Tree engine.
 
 - [x] CLI execution test
 - [x] Existing CI still passing
+
+---
+
+## TREE-018 — Restore Make Tree workflow
+
+### Goal
+
+Connect CLI create command to tree creation engine.
+
+### Implementation
+
+- [ ] Read input tree file
+- [ ] Send lines to core engine
+- [ ] Create filesystem output
+
+### Validation
+
+- [ ] CLI create command test
+- [ ] Existing CI still passing
