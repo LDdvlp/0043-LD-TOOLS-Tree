@@ -24,7 +24,7 @@
 | TREE-015 | ✅ Done | Add macOS compatibility tests |
 | TREE-016 | ✅ Done | Add GitHub Actions OS matrix |
 | **V0.4 - Restore user workflow** |||
-| TREE-017 | ⏳ Todo | Add command line interface |
+| TREE-017 | ✅ Done | Add command line interface |
 
 ---
 
@@ -124,12 +124,12 @@ Restore user access to LD-TOOLS-Tree engine.
 
 ### Implementation
 
-- [ ] Create bin entry point
-- [ ] Load core engine
-- [ ] Add command handling
-- [ ] Add input/output parameters
+- [x] Create bin entry point
+- [x] Load core engine
+- [x] Add command handling
+- [x] Add input/output parameters
 
 ### Validation
 
-- [ ] CLI execution test
-- [ ] Existing CI still passing
+- [x] CLI execution test
+- [x] Existing CI still passing
