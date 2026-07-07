@@ -1,6 +1,11 @@
 # Tree Architecture
 
-Version: 0.1.0 (Draft)
+Version: 0.3.0-alpha.1
+
+Supported platforms:
+- Windows
+- Linux
+- macOS
 
 ## Principles
 
@@ -11,8 +16,9 @@ Tree is composed of:
 
 The first supported platform is Windows.
 
-Future platforms:
+Supported platforms:
 
+- Windows
 - Linux
 - macOS
 

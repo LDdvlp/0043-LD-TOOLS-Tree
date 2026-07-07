@@ -1,7 +1,7 @@
 # Tree Specification
 
 Specification status: Draft
-Project version: 0.2.0-alpha.2
+Project version: 0.3.0-alpha.1
 
 ## Goal
 
@@ -9,9 +9,9 @@ Tree is a cross-platform toolkit for manipulating filesystem trees from textual 
 
 The first supported platforms are:
 
-- Windows (first implementation)
-- Linux (planned)
-- macOS (planned)
+- Windows supported
+- Linux supported
+- macOS supported
 
 The first modules are:
 
