@@ -1,5 +1,9 @@
 #!/usr/bin/env pwsh
 
+param(
+    [string]$Command = "help"
+)
+
 $RootPath = Split-Path $PSScriptRoot -Parent
 
 $VersionFile = Join-Path $RootPath "VERSION"
@@ -9,6 +13,22 @@ $CoreFile = Join-Path $RootPath "core/tree.ps1"
 
 $Version = Get-Content $VersionFile
 
-Write-Host "LD-TOOLS-Tree $Version"
-Write-Host "Core loaded"
-Write-Host "CLI ready"
+switch ($Command) {
+
+    "version" {
+        Write-Host "LD-TOOLS-Tree $Version"
+    }
+
+    "help" {
+        Write-Host "LD-TOOLS-Tree $Version"
+        Write-Host ""
+        Write-Host "Commands:"
+        Write-Host "  version    Show version"
+        Write-Host "  help       Show help"
+    }
+
+    default {
+        Write-Host "Unknown command: $Command"
+        exit 1
+    }
+}
