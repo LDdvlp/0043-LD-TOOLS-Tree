@@ -1,7 +1,9 @@
 #!/usr/bin/env pwsh
 
 param(
-    [string]$Command = "help"
+    [string]$Command = "help",
+    [string]$InputFile,
+    [string]$OutputPath
 )
 
 $RootPath = Split-Path $PSScriptRoot -Parent
@@ -25,6 +27,23 @@ switch ($Command) {
         Write-Host "Commands:"
         Write-Host "  version    Show version"
         Write-Host "  help       Show help"
+    }
+
+    "create" {
+
+        if (-not $InputFile) {
+            Write-Host "Missing parameter: InputFile"
+            exit 1
+        }
+    
+        if (-not $OutputPath) {
+            Write-Host "Missing parameter: OutputPath"
+            exit 1
+        }
+    
+        Write-Host "Creating tree"
+        Write-Host "Input : $InputFile"
+        Write-Host "Output: $OutputPath"
     }
 
     default {
