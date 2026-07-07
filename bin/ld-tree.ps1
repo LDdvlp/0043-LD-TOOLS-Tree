@@ -35,15 +35,19 @@ switch ($Command) {
             Write-Host "Missing parameter: InputFile"
             exit 1
         }
-    
+
         if (-not $OutputPath) {
             Write-Host "Missing parameter: OutputPath"
             exit 1
         }
-    
-        Write-Host "Creating tree"
-        Write-Host "Input : $InputFile"
-        Write-Host "Output: $OutputPath"
+
+        $Lines = Get-Content $InputFile
+            
+        Invoke-TreeCreation `
+            -Lines $Lines `
+            -OutputPath $OutputPath
+            
+        Write-Host "Tree created"
     }
 
     default {
