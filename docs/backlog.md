@@ -25,7 +25,7 @@
 | TREE-016 | ✅ Done | Add GitHub Actions OS matrix |
 | **V0.4 - Restore user workflow** |||
 | TREE-017 | ✅ Done | Add command line interface |
-| TREE-018 | ⏳ Todo | Restore Make Tree workflow |
+| TREE-018 | ✅ Done | Restore Make Tree workflow |
 
 
 ---
@@ -146,11 +146,11 @@ Connect CLI create command to tree creation engine.
 
 ### Implementation
 
-- [ ] Read input tree file
-- [ ] Send lines to core engine
-- [ ] Create filesystem output
+- [x] Read input tree file
+- [x] Send lines to core engine
+- [x] Create filesystem output
 
 ### Validation
 
-- [ ] CLI create command test
-- [ ] Existing CI still passing
+- [x] CLI create command test
+- [x] Existing CI still passing
