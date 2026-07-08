@@ -26,7 +26,7 @@
 | **V0.4 - Restore user workflow** |||
 | TREE-017 | ✅ Done | Add command line interface |
 | TREE-018 | ✅ Done | Restore Make Tree workflow |
-| TREE-019 | ⏳ Todo | Restore Export Tree workflow |
+| TREE-019 | ✅ Done | Restore Export Tree workflow |
 
 ---
 
@@ -165,12 +165,12 @@ Restore filesystem to ASCII tree export.
 
 ### Implementation
 
-- [ ] Extract export engine from legacy
-- [ ] Return tree lines from core
-- [ ] Add export CLI command
-- [ ] Write output file
+- [x] Extract export engine from legacy
+- [x] Return tree lines from core
+- [x] Add export CLI command
+- [x] Write output file
 
 ### Validation
 
-- [ ] Export command test
-- [ ] Existing CI still passing
+- [x] Export command test
+- [x] Existing CI still passing
