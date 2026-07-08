@@ -7,6 +7,19 @@ and this project adheres to Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.4.0-alpha.1] - 2026-07-08
+
+### Added
+
+- Added command line interface
+- Restored Make Tree workflow
+- Restored Export Tree workflow
+- Added filesystem to ASCII export command
+
+### Changed
+
+- Reconnected legacy features to Core architecture
+
 ## [0.3.0-alpha.1] - 2026-07-05
 
 ### Added

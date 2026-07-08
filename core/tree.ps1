@@ -160,3 +160,48 @@ function Invoke-TreeCreation {
         }
     }
 }
+
+function Export-Tree {
+
+    param(
+        [string]$Path,
+        [string]$Prefix = ""
+    )
+
+    $lines = @()
+
+    $items = Get-ChildItem -LiteralPath $Path
+
+    $count = $items.Count
+
+    for ($i = 0; $i -lt $count; $i++) {
+
+        $item = $items[$i]
+
+        $connector = "+-- "
+
+        if ($i -eq ($count - 1)) {
+            $nextPrefix = $Prefix + "    "
+        }
+        else {
+            $nextPrefix = $Prefix + "|   "
+        }
+
+        $line = $Prefix + $connector + $item.Name
+
+        if ($item.PSIsContainer) {
+            $line += "/"
+        }
+
+        $lines += $line
+
+        if ($item.PSIsContainer) {
+
+            $lines += Export-Tree `
+                -Path $item.FullName `
+                -Prefix $nextPrefix
+        }
+    }
+
+    return $lines
+}

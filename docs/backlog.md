@@ -23,6 +23,11 @@
 | TREE-014 | ✅ Done | Add Linux compatibility tests |
 | TREE-015 | ✅ Done | Add macOS compatibility tests |
 | TREE-016 | ✅ Done | Add GitHub Actions OS matrix |
+| **V0.4 - Restore user workflow** |||
+| TREE-017 | ✅ Done | Add command line interface |
+| TREE-018 | ✅ Done | Restore Make Tree workflow |
+| TREE-019 | ✅ Done | Restore Export Tree workflow |
+| TREE-020 | ⏳ Todo | Prepare v0.4.0-alpha.1 release |
 
 ---
 
@@ -111,3 +116,83 @@
 - [x] Windows CI passed
 - [x] macOS CI passed
 - [x] Full matrix successful
+
+---
+
+## TREE-017 — Add command line interface
+
+### Goal
+
+Restore user access to LD-TOOLS-Tree engine.
+
+### Implementation
+
+- [x] Create bin entry point
+- [x] Load core engine
+- [x] Add command handling
+- [x] Add input/output parameters
+
+### Validation
+
+- [x] CLI execution test
+- [x] Existing CI still passing
+
+---
+
+## TREE-018 — Restore Make Tree workflow
+
+### Goal
+
+Connect CLI create command to tree creation engine.
+
+### Implementation
+
+- [x] Read input tree file
+- [x] Send lines to core engine
+- [x] Create filesystem output
+
+### Validation
+
+- [x] CLI create command test
+- [x] Existing CI still passing
+
+---
+
+## TREE-019 — Restore Export Tree workflow
+
+### Goal
+
+Restore filesystem to ASCII tree export.
+
+### Implementation
+
+- [x] Extract export engine from legacy
+- [x] Return tree lines from core
+- [x] Add export CLI command
+- [x] Write output file
+
+### Validation
+
+- [x] Export command test
+- [x] Existing CI still passing
+
+---
+
+## TREE-020 — Prepare v0.4.0-alpha.1 release
+
+### Goal
+
+Release restored user workflow.
+
+### Implementation
+
+- [ ] Update VERSION
+- [ ] Update README badge
+- [ ] Update CHANGELOG
+
+### Validation
+
+- [ ] CI passing
+- [ ] Merge develop into main
+- [ ] Create v0.4.0-alpha.1 tag
+- [ ] Publish GitHub prerelease

@@ -68,3 +68,16 @@ not duplicate the validation logic.
 - SemVer
 - Annotated tags
 - GitHub releases
+
+LD AI Workflow Standard
+
+Interactive AI:
+- architecture
+- decisions
+- reviews
+- releases
+
+Agentic AI:
+- scoped implementation
+- tests
+- documentation tasks

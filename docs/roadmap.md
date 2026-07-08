@@ -38,8 +38,9 @@ Tasks:
 
 ---
 
-## Version 0.4
+## Version 0.4 - Restore user workflow
 
-- Tree validation
-- Tree comparison
-- Tree normalization
+- Command line interface
+- Restore Make Tree workflow
+- Restore Export Tree workflow
+- Packaging
