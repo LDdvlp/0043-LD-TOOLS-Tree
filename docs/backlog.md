@@ -27,6 +27,7 @@
 | TREE-017 | ✅ Done | Add command line interface |
 | TREE-018 | ✅ Done | Restore Make Tree workflow |
 | TREE-019 | ✅ Done | Restore Export Tree workflow |
+| TREE-020 | ⏳ Todo | Prepare v0.4.0-alpha.1 release |
 
 ---
 
@@ -174,3 +175,24 @@ Restore filesystem to ASCII tree export.
 
 - [x] Export command test
 - [x] Existing CI still passing
+
+---
+
+## TREE-020 — Prepare v0.4.0-alpha.1 release
+
+### Goal
+
+Release restored user workflow.
+
+### Implementation
+
+- [ ] Update VERSION
+- [ ] Update README badge
+- [ ] Update CHANGELOG
+
+### Validation
+
+- [ ] CI passing
+- [ ] Merge develop into main
+- [ ] Create v0.4.0-alpha.1 tag
+- [ ] Publish GitHub prerelease
