@@ -27,7 +27,7 @@
 | TREE-017 | ✅ Done | Add command line interface |
 | TREE-018 | ✅ Done | Restore Make Tree workflow |
 | TREE-019 | ✅ Done | Restore Export Tree workflow |
-| TREE-020 | ⏳ Todo | Prepare v0.4.0-alpha.1 release |
+| TREE-020 | ✅ Done | Prepare v0.4.0-alpha.1 release |
 
 ---
 
@@ -186,13 +186,13 @@ Release restored user workflow.
 
 ### Implementation
 
-- [ ] Update VERSION
-- [ ] Update README badge
-- [ ] Update CHANGELOG
+- [x] Update VERSION
+- [x] Update README badge
+- [x] Update CHANGELOG
 
 ### Validation
 
-- [ ] CI passing
-- [ ] Merge develop into main
-- [ ] Create v0.4.0-alpha.1 tag
-- [ ] Publish GitHub prerelease
+- [x] CI passing
+- [x] Merge develop into main
+- [x] Create v0.4.0-alpha.1 tag
+- [x] Publish GitHub prerelease
