@@ -50,6 +50,27 @@ switch ($Command) {
         Write-Host "Tree created"
     }
 
+    "export" {
+
+        if (-not $InputFile) {
+            Write-Host "Missing parameter: InputFile"
+            exit 1
+        }
+
+        if (-not $OutputPath) {
+            Write-Host "Missing parameter: OutputPath"
+            exit 1
+        }
+
+        $Lines = Export-Tree -Path $InputFile
+
+        Set-Content `
+            -Path $OutputPath `
+            -Value $Lines
+
+        Write-Host "Tree exported"
+    }
+    
     default {
         Write-Host "Unknown command: $Command"
         exit 1
