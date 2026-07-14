@@ -28,7 +28,8 @@
 | TREE-018 | ✅ Done | Restore Make Tree workflow |
 | TREE-019 | ✅ Done | Restore Export Tree workflow |
 | TREE-020 | ✅ Done | Prepare v0.4.0-alpha.1 release |
-
+| **V0.5 - User Integration** |||
+| TREE-021 | ⏳ Todo | Add multi-platform usage documentation |
 ---
 
 # Tasks details
@@ -196,3 +197,24 @@ Release restored user workflow.
 - [x] Merge develop into main
 - [x] Create v0.4.0-alpha.1 tag
 - [x] Publish GitHub prerelease
+
+---
+
+## TREE-021 — Add multi-platform usage documentation
+
+### Goal
+
+Document CLI usage on Windows, Linux and macOS.
+
+### Implementation
+
+- [ ] Create usage guide
+- [ ] Document create command
+- [ ] Document export command
+- [ ] Add Windows examples
+- [ ] Add Linux examples
+- [ ] Add macOS examples
+
+### Validation
+
+- [ ] Documentation reviewed
