@@ -30,6 +30,7 @@
 | TREE-020 | ✅ Done | Prepare v0.4.0-alpha.1 release |
 | **V0.5 - User Integration** |||
 | TREE-021 | ⏳ Todo | Add multi-platform usage documentation |
+| TREE-022 | ⏳ Todo | Restore Windows Explorer integration |
 ---
 
 # Tasks details
@@ -218,3 +219,22 @@ Document CLI usage on Windows, Linux and macOS.
 ### Validation
 
 - [ ] Documentation reviewed
+
+---
+
+## TREE-022 — Restore Windows Explorer integration
+
+### Goal
+
+Restore native Windows Explorer integration using the new CLI architecture.
+
+### Implementation
+
+- [ ] Design Windows integration
+- [ ] Create Windows scripts
+- [ ] Create parent context menu
+- [ ] Connect CLI commands
+
+### Validation
+
+- [ ] Manual integration test
