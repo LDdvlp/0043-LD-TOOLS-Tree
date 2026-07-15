@@ -30,7 +30,10 @@
 | TREE-020 | ✅ Done | Prepare v0.4.0-alpha.1 release |
 | **V0.5 - User Integration** |||
 | TREE-021 | ⏳ Todo | Add multi-platform usage documentation |
-| TREE-022 | ⏳ Todo | Restore Windows Explorer integration |
+| TREE-022 | ⏳ Todo | Design Windows Explorer integration |
+| TREE-023 | ⏳ Todo | Implement Windows installer |
+| TREE-024 | ⏳ Todo | Implement Windows uninstaller |
+| TREE-025 | ⏳ Todo | Prepare v0.5 release |
 ---
 
 # Tasks details
@@ -238,3 +241,28 @@ Restore native Windows Explorer integration using the new CLI architecture.
 ### Validation
 
 - [ ] Manual integration test
+
+### Architecture
+
+```
+Windows Explorer
+        │
+        ▼
+LD-TOOLS-Tree
+        │
+        ├── Export tree.txt
+        │       │
+        │       ▼
+        │   export-tree.cmd
+        │       │
+        │       ▼
+        │   ld-tree.ps1 export
+        │
+        └── Create from tree.txt
+                │
+                ▼
+            create-tree.cmd
+                │
+                ▼
+            ld-tree.ps1 create
+```
