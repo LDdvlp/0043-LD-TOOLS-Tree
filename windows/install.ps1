@@ -12,5 +12,9 @@ Write-Host ""
 Write-Host "Create script : $CreateScript"
 Write-Host "Export script : $ExportScript"
 Write-Host "Registry root : $RegistryRoot"
+Write-Host "Creating registry root..."
+if (-not (Test-Path $RegistryRoot)) {
+    New-Item -Path $RegistryRoot -Force | Out-Null
+}
 Write-Host "Ready."
 
