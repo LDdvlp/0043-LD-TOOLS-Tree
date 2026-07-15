@@ -11,5 +11,6 @@ Write-Host "Installing LD-TOOLS-Tree $Version..."
 Write-Host ""
 Write-Host "Create script : $CreateScript"
 Write-Host "Export script : $ExportScript"
+Write-Host "Registry root : $RegistryRoot"
 Write-Host "Ready."
 
