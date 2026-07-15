@@ -16,5 +16,6 @@ Write-Host "Creating registry root..."
 if (-not (Test-Path $RegistryRoot)) {
     New-Item -Path $RegistryRoot -Force | Out-Null
 }
+Set-ItemProperty -Path $RegistryRoot -Name "(Default)" -Value "LD-TOOLS-Tree"
 Write-Host "Ready."
 
