@@ -19,5 +19,8 @@ if (-not (Test-Path $RegistryRoot)) {
 }
 Set-ItemProperty -Path $RegistryRoot -Name "(Default)" -Value "LD-TOOLS-Tree"
 Write-Host "Creating Export menu..."
+if (-not (Test-Path $ExportMenu)) {
+    New-Item -Path $ExportMenu -Force | Out-Null
+}
 Write-Host "Ready."
 
