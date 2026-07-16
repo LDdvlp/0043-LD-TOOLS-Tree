@@ -9,6 +9,7 @@ $RegistryRoot = "HKCU:\Software\Classes\Directory\Background\shell\LD-TOOLS-Tree
 $ExportMenu = Join-Path $RegistryRoot "shell\Export"
 $ExportCommand = Join-Path $ExportMenu "command"
 $ExportLabel = "Export ASCII Tree"
+$ExportCommandLine = "`"$ExportScript`" `"%V`""
 
 Write-Host "Installing LD-TOOLS-Tree $Version..."
 Write-Host ""
