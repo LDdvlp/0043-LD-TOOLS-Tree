@@ -11,6 +11,7 @@ $ExportCommand = Join-Path $ExportMenu "command"
 $ExportLabel = "Export ASCII Tree"
 $ExportCommandLine = "`"$ExportScript`" `"%V`""
 $CreateMenu = Join-Path $RegistryRoot "shell\Create"
+$CreateCommand = Join-Path $CreateMenu "command"
 
 Write-Host "Installing LD-TOOLS-Tree $Version..."
 Write-Host ""
