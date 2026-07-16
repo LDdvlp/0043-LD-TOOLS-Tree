@@ -24,5 +24,8 @@ Write-Host "Creating Export command..."
 if (-not (Test-Path $ExportMenu)) {
     New-Item -Path $ExportMenu -Force | Out-Null
 }
+if (-not (Test-Path $ExportCommand)) {
+    New-Item -Path $ExportCommand -Force | Out-Null
+}
 Write-Host "Ready."
 
