@@ -7,6 +7,7 @@ $CreateScript = Join-Path $ScriptsPath "create-tree.cmd"
 $ExportScript = Join-Path $ScriptsPath "export-tree.cmd"
 $RegistryRoot = "HKCU:\Software\Classes\Directory\Background\shell\LD-TOOLS-Tree"
 $ExportMenu = Join-Path $RegistryRoot "shell\Export"
+$ExportCommand = Join-Path $ExportMenu "command"
 
 Write-Host "Installing LD-TOOLS-Tree $Version..."
 Write-Host ""
