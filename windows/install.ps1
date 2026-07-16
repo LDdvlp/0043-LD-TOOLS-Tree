@@ -29,6 +29,7 @@ if (-not (Test-Path $ExportMenu)) {
 if (-not (Test-Path $ExportCommand)) {
     New-Item -Path $ExportCommand -Force | Out-Null
 }
+Set-ItemProperty -Path $ExportCommand -Name "(Default)" -Value $ExportCommandLine
 Set-ItemProperty -Path $ExportMenu -Name "(Default)" -Value $ExportLabel
 Write-Host "Ready."
 
